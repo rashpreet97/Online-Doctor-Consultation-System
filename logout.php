@@ -11,11 +11,11 @@
 
 
 	<?php
-		$_SESSION["username"]="";
+		$_SESSION["email"]="";
 		$_SESSION["password"]="";
 
-		$_SESSION['adminstatus']="";
-		      header("location:../index.php");
+		$_SESSION['userstatus']="";
+		      header("location:../signin.php");
 
 	 ?>
  <?php include('footer.php'); ?>

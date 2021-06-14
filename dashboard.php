@@ -1,20 +1,43 @@
-<?php if(!isset($_SESSION)){
-	session_start();
-	}  
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>patient</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<?php include('header.php'); ?>
+<?php
+
+// if($_SESSION['donorstatus']==""){
+// 	header("location:../userlogin.php");
+// }
+
+?>
+	<?php include('uptomenu.php'); ?>
+
+
+
+
 	<div class="dashboard" style="background-color:#fff;">
-		<h3 class="text-middle" style="background-color:#272327;color: #fff;padding: 5px;">Admin Panel</h3>
-		<span class="adminDashboard" style="font-size: 85px;font-weight: bold;color: blue;font-family: serif;margin-left: 180px;background-color: black;">Welcome To Admin Panel</span>
+		<h3 class="text-center" style="background-color:#272327;color: #fff;padding: 5px;">Welcome to Your Panel</h3>
+		<img src="img/dash1.jpg" alt="logo.png img" class="img-responsive" style="margin-left:440px;width:300px;">
+		
+		
+			
+		
 	</div>
-	
 	
 <?php include('footer.php'); ?>
 
+
+	
 </div><!--  containerFluid Ends -->
 
 <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
